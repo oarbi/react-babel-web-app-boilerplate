@@ -1,0 +1,14 @@
+@mixin transition() {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@mixin scale($factor) {
+  transform: scale($factor);
+}

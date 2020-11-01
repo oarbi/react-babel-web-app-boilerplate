@@ -1,0 +1,5 @@
+{
+  "greeting": "Hi {{name}}",
+  "email": "Your Email",
+  "phone": "Your Phone Number"
+}

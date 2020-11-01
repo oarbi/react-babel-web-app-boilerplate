@@ -1,0 +1,70 @@
+@import '#/common/styles/mixins.scss';
+@import '#/common/styles/rm.scss';
+
+.home {
+  height: 100vh;
+  background-color: var(--primary-light-background);
+  @include center();
+  flex-direction: column;
+
+  &__language-picker {
+    margin: 20px 0;
+
+    &__language-btn {
+      cursor: pointer;
+      margin: 10px;
+      font-weight: 700;
+      @include transition();
+      @include scale(1);
+
+      &--selected {
+        color: var(--primary);
+      }
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  &__profile {
+    @include center();
+    flex-direction: column;
+
+    h1,
+    p {
+      margin: 5px;
+    }
+
+    &__avatar {
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+      @include transition();
+
+      &:hover {
+        @include scale(1.05);
+      }
+    }
+
+    &__label {
+      color: var(--primary);
+      font-weight: 500;
+    }
+  }
+}
+
+@include rm('lt-md') {
+  .home {
+    &__profile {
+      h1 {
+        font-size: 20px;
+      }
+
+      &__avatar {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+}

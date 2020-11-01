@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component should render correctly 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="home__language-picker"
+  >
+    <span
+      className="home__language-picker__language-btn"
+      onClick={[Function]}
+    >
+      EN
+    </span>
+    <span
+      className="home__language-picker__language-btn"
+      onClick={[Function]}
+    >
+      FR
+    </span>
+  </div>
+  <div
+    className="home__profile"
+  >
+    <img
+      alt="avatar"
+      className="home__profile__avatar"
+      src="https://randomuser.me/api/portraits/men/75.jpg"
+    />
+    <h1>
+      greeting
+    </h1>
+    <p>
+      <span
+        className="home__profile__label"
+      >
+        email
+        :
+      </span>
+       
+      brad.gibson@example.com
+    </p>
+    <p>
+      <span
+        className="home__profile__label"
+      >
+        phone
+        :
+      </span>
+       
+      011-962-7516
+    </p>
+  </div>
+</div>
+`;
